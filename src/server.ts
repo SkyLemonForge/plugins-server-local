@@ -41,7 +41,10 @@ app.use('/web-page-reader', webPageReaderRouter);
 app.use('/powerpoint-generator', powerpointGeneratorRouter);
 app.use('/word-generator', wordGeneratorRouter);
 // Swagger UI
-app.use(openAPIRouter);
+
+
+app.use('/docs', openAPIRouter);
+
 
 // Error handlers
 app.use(errorHandler());
